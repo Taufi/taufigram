@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  appName: 'Udagram',
-  apiHost: 'http://localhost:8080/api/v0'
+  appName: 'Taufigram',
+  apiHost: 'http://127.0.0.1:8080/api/v0/'
 };
 
 /*

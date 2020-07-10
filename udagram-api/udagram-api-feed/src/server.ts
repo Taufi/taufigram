@@ -13,7 +13,7 @@ import { FeedRouter } from './controllers/v0/feed/routes/feed.router';
   await sequelize.sync();
 
   const app = express();
-  const port = process.env.PORT || 8080;
+  const port = process.env.PORT || 8082;
 
   app.use(bodyParser.json());
 
@@ -37,7 +37,8 @@ import { FeedRouter } from './controllers/v0/feed/routes/feed.router';
 
   // Start the Server
   app.listen( port, () => {
-    console.log( `server running ${config.url}` );
+    // console.log( `server running ${config.url}` );
+    console.log( `server running ${port}` );
     console.log( `press CTRL+C to stop server` );
   } );
 })();
