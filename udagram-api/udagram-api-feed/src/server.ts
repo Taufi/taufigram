@@ -13,7 +13,8 @@ import { FeedRouter } from './controllers/v0/feed/routes/feed.router';
   await sequelize.sync();
 
   const app = express();
-  const port = process.env.PORT || 8082;
+  // const port = process.env.PORT || 8080;
+  const port = 8082;
 
   app.use(bodyParser.json());
 
